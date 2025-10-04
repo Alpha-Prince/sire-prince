@@ -1,0 +1,122 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+
+@theme {
+  --font-zen-dots: "Zen Dots", sans-serif;
+  --font-voltaire: "Voltaire", sans-serif;
+  --font-sora: "Sora", sans-serif;
+}
+
+@keyframes custom-marquee{
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes fadeInUp {
+    from { 
+        opacity: 0; 
+        transform: translateY(45px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+@keyframes fadeIndown {
+    from { 
+        opacity: 0; 
+        transform: translateY(-45px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+@keyframes slideright {
+    from { 
+        opacity: 0; 
+        transform: translateX(-55px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateX(0); 
+    }
+}
+@keyframes slideleft {
+    from { 
+        opacity: 0; 
+        transform: translateX(55px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateX(0); 
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 1s ease-out ;
+}
+.fade-in-down {
+    animation: fadeIndown 1s ease-out ;
+}
+.slide-right {
+    animation: slideright 1s ease-out ;
+}
+.slide-left {
+    animation: slideleft 1s ease-out ;
+}
+
+.animate-marquee {
+  animation-name: marquee;
+}
+.animate-custom-marquee {
+  animation: custom-marquee 20s linear infinite;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+  max-width: 1280px;
+}
+
+body {
+ margin: 0;
+ padding:  0;
+ outline: none;
+ box-sizing: border-box;
+ text-decoration: none;
+ background:#06065D;
+ color: #FFFFFF;
+}
+
+
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+/* Smooth scrolling */
+.scrollbar-hide {
+  scroll-behavior: smooth;
+}
