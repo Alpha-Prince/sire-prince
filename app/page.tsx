@@ -10,7 +10,7 @@ export default function Page() {
 
   return (
    <>
-   <div className="bg-[06065D] min-h-screen"> 
+   <div className="bg-[#06065D] min-h-screen"> 
     {/* <Navbar /> */}
    <Hero />
    <About />
