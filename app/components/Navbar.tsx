@@ -48,7 +48,7 @@ const Navbar = () => {
       <Reveal animation='slideRight'>
         <div 
           ref={menuRef} 
-          className="fixed right-0 top-0 h-dvh w-[50%] md:w-[40%] bg-red-500 pt-20 px-6 hidden flex-col justify-around items-start text-white z-40"
+          className="fixed right-0 top-0 h-dvh w-[100%] md:w-[40%] bg-red-500 pt-20 px-6 hidden flex-col justify-around items-start text-white z-40"
         >
           <h1 className='font-zen-dots text-3xl sm:text-xl md:text-3xl mb-8 flex transition-transform hover:-translate-y-2'>
             <Link 

@@ -4,8 +4,8 @@ import { zenDots, voltaire, sora } from './fonts';
 import Navbar from './components/Navbar'; // Adjust path as needed
 
 export const metadata: Metadata = {
-  title: "Sire Portfolio App",
-  description: "Sire Prince Portfolio Website | Sire Portfolio ",
+  title: "Sire Prince",
+  description: "Sire Prince Website | Sire Portfolio ",
 };
 
 export default function RootLayout({

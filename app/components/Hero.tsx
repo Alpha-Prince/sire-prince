@@ -24,7 +24,7 @@ const Hero = () => {
 
       <Reveal animation="fadeInDown" delay={0.5}>
         <div className="flex justify-center items-center fade-in-down w-full">
-          <div className="h-12 sm:h-12 md:h-16 w-[50%] sm:-w-[70%] md:-w-[62%] relative mt-20 sm:mt-10 md:mt-20">
+          <div className="h-12 sm:h-12 md:h-16 w-[70%] sm:w-[85%] md:w-[65%] relative mt-20 sm:mt-10 md:mt-20">
             <div className="relative flex overflow-x-hidden py-4 box-shadow-lg border-t-2 border-orange-500">
               {/* Left cloud/fade overlay */}
               <div

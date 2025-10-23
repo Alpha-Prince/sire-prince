@@ -22,13 +22,13 @@ Currently focused on building accessible web applications for businesses and fre
               </p>
             </Reveal>
 
-            <div className="w-full flex  gap-6 mt-10 px-0 sm:px-20">
+            <div className="w-full flex gap-6 mt-10 px-0 ">
               <Reveal animation="slideRight" delay={1}>
                 <a
                   href="https://sire-services.vercel.app/#main-nav"
                   target="_blank"
                   rel="noopener noreferrer"
-  className="bg-red-500 text-white py-2 px-2 rounded cursor-pointer  hover:bg-white hover:text-red-500 transition-transform hover:-translate-y-1"                >
+  className="bg-red-500 text-white py-2 px-2 rounded cursor-pointer text-left  hover:bg-white hover:text-red-500 transition-transform hover:-translate-y-1"                >
                   Services
                 </a>
               </Reveal>
@@ -37,7 +37,7 @@ Currently focused on building accessible web applications for businesses and fre
                 <a
                   href="/resume.pdf" 
                   download
-  className="bg-red-500 text-white py-2 px-2 rounded cursor-pointer  hover:bg-white hover:text-red-500 transition-transform hover:-translate-y-1"                >
+  className="bg-red-500 text-white py-2 px-2 rounded cursor-pointer text-left  hover:bg-white hover:text-red-500 transition-transform hover:-translate-y-1"                >
                   Download Resume
                 </a>
 
@@ -48,15 +48,15 @@ Currently focused on building accessible web applications for businesses and fre
           {/* Video Section */}
           <Reveal animation="slideLeft" delay={1}>
             <div className="relative w-70 sm:w-22 md:w-50 h-40 sm:h-22 md:h-90 mr-5 bg-white/10 border border-white/20 rounded-lg overflow-hidden group my-10 shadow-lg">
-              <video
-                autoPlay
-                loop 
-                muted 
-                playsInline
-                className="absolute inset-0 w-full h-full object-cover z-0 rounded-lg"
-              >
-                <source src="/aboutbg.mp4" type="video/mp4" />
-              </video>
+             <video 
+  autoPlay 
+  loop 
+  muted 
+  playsInline
+  preload="metadata" 
+>
+  <source src="/aboutbg.mp4" type="video/mp4" />
+</video>
 
               <div className="absolute bottom-0 left-0 w-full h-0 group-hover:h-1/2 transition-all duration-500 bg-gradient-to-t from-red-400/80 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 rounded-b-lg">
                 <div>
