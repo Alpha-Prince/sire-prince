@@ -36,6 +36,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+.flex-start {
+  display: flex;  justify-content: start;
+  align-items: center;
+}
+.flex-end {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
 
 .flex-between {
   display: flex;
@@ -50,18 +59,15 @@ body {
   align-items: center;
 }
 
-.text-shadow-gray-500 {
-  text-shadow: 0 1px 2px rgb(128, 107, 107);
-}
 
 .btn{
-  padding: 12px 24px;
+padding: 12px 24px;
 border: 1px solid #00007e7a;
 border-radius: 5px;
 }
 .btn:hover{
 background: #272727;
-transition: all ease-in;
+transition: background ease;
 cursor: pointer;
 
 }
@@ -70,3 +76,25 @@ border: 1px solid rgb(20, 20, 156);
  transition: all ease-in;
  cursor:alias  
   }
+
+  .project{
+     width: 320px;
+     height: 200px;
+     border-top-left-radius: 25px;
+     border-top-right-radius: 25px;
+    background: linear-gradient(rgba(8, 0, 58, 0.7),rgba(8, 0, 58, 0.7)),url(/public/pro-1.jpg);
+  }
+  .home{
+    background: linear-gradient(rgba(8, 0, 58, 0.7),rgba(8, 0, 58, 0.7)),url(/src/assets/picture_2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}

@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -30,29 +31,30 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="min-h-screen flex items-center bg-black/50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+    <section className="min-h-screen flex items-center bg-black/50 py-14 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left side - Text Content */}
-        <div className="space-y-5 sm:space-y-12 px-9 py-4 text-white">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+        <div className="space-y-12 sm:space-y-12 px-9 py-4 text-white">
+          <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold leading-tight">
             Your Vision Into
             Digital Reality
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed">
-            Full-stack developer specializing in crafting innovative web solutions. 
+            Full-stack developer specializing in crafting innovative solutions. 
             Transforming ideas into seamless, responsive, and user-centric applications.
           </p>
           <div className="pt-4">
-
-            <button className="bg-[#272727] btn hover:text-blue-400">
+<Link href="/contact"> <button className="bg-[#272727] btn hover:text-blue-400">
               Contact Me
             </button>
+</Link>
+           
           </div>
         </div>
 
         {/* Right side - Image Carousel */}
         <div className="relative">
-          <div className="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden">
+          <div className="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden ">
             {images.map((image, index) => (
               <div
                 key={index}
