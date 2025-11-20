@@ -29,6 +29,7 @@ const Testimonials = () => {
        description: "The corporate website redesign project was handled with utmost professionalism. Their project management kept everything on schedule and within budget. ",
        image: "/test4.jpg"
     },
+    
     {
         name: "Skyline Haven",
             description: "I needed a portfolio website that truly showcased my artistic work, and wow, did they deliver!. The admin panel is so easy to use - I can update my portfolio in minutes. ",
@@ -83,7 +84,7 @@ const prevProject = () => {
       
         {/* projects slider container */}
         <div className='overflow-hidden'>
-            <div className=' flex items-center justify-between gap-10 transition-transform duration-500 ease-in-out'
+            <div className=' flex items-center justify-between gap-10 transition-transform duration-500 ease-in-out '
             style={{transform: `translateX(-${(currentIndex * 100) / cardsToShow}%)`}}
             >
                 <div className='w-auto flex items-center justify-between gap-7'>
@@ -142,103 +143,5 @@ const prevProject = () => {
 export default Testimonials;
 
 
-//   return (
-//          <div className='flex items-center justify-start w-full py-6 sm:py-12 px-6 sm:px-15 overflow-hidden'>  
-//          <div className='w-[200%] flex items-center justify-between  py-6 sm:py-12 px-6 sm:px-15 '>  
-        
 
-      
-//          <div className='flex flex-col items-center justify-center gap-3 px-7 sm:px-10 w-[280] text-center'>
-//                 <Image
-//                 src={'/test1.jpg'}
-//                 width={150}
-//                 height={150}
-//                 alt='testImgh'
-//                 className='rounded-full'
-//                 />
-        
-//          <div className=''>
-//             <h3 className="text-lg font-bold">Lorem ipsum dolor </h3>
-//             <p className="text-md">escriptionamet consectetur adipisicing elit. Officia 
-//                 esse earum itaque velit et nemo accusamus, odio aspernatur suscipit cumque molestiae minus natus hic modi quod quo ea sed aperiam. </p>
-//         </div>  
-//          </div>
-//          <div className='flex flex-col items-center justify-center gap-3 px-7 sm:px-10 w-[280] text-center'>
-//                 <Image
-//                 src={'/test2.jpg'}
-//                 width={150}
-//                 height={150}
-//                 alt='testImgh'
-//                 className='rounded-full'
-//                 />
-        
-//          <div className=''>
-//             <h3 className="text-lg font-bold">Lorem ipsum dolor </h3>
-//             <p className="text-md">escriptionamet consectetur adipisicing elit. Officia 
-//                 esse earum itaque velit et nemo accusamus, odio aspernatur suscipit cumque molestiae minus natus hic modi quod quo ea sed aperiam. </p>
-//         </div>  
-//          </div>
-//          <div className='flex flex-col items-center justify-center gap-3 px-7 sm:px-10 w-[280] text-center'>
-//                 <Image
-//                 src={'/test3.jpg'}
-//                 width={150}
-//                 height={150}
-//                 alt='testImgh'
-//                 className='rounded-full'
-//                 />
-        
-//          <div className=''>
-//             <h3 className="text-lg font-bold">Lorem ipsum dolor </h3>
-//             <p className="text-md">escriptionamet consectetur adipisicing elit. Officia 
-//                 esse earum itaque velit et nemo accusamus, odio aspernatur suscipit cumque molestiae minus natus hic modi quod quo ea sed aperiam. </p>
-//         </div>  
-//          </div>
-//          <div className='flex flex-col items-center justify-center gap-3 px-7 sm:px-10 w-[280] text-center'>
-//                 <Image
-//                 src={'/test4.jpg'}
-//                 width={150}
-//                 height={150}
-//                 alt='testImgh'
-//                 className='rounded-full'
-//                 />
-        
-//          <div className=''>
-//             <h3 className="text-lg font-bold">Lorem ipsum dolor </h3>
-//             <p className="text-md">escriptionamet consectetur adipisicing elit. Officia 
-//                 esse earum itaque velit et nemo accusamus, odio aspernatur suscipit cumque molestiae minus natus hic modi quod quo ea sed aperiam. </p>
-//         </div>  
-//          </div>
-//          <div className='flex flex-col items-center justify-center gap-3 px-7 sm:px-10 w-[280] text-center'>
-//                 <Image
-//                 src={'/test5.jpg'}
-//                 width={150}
-//                 height={150}
-//                 alt='testImgh'
-//                 className='rounded-full'
-//                 />
-        
-//          <div className=''>
-//             <h3 className="text-lg font-bold">Lorem ipsum dolor </h3>
-//             <p className="text-md">escriptionamet consectetur adipisicing elit. Officia 
-//                 esse earum itaque velit et nemo accusamus, odio aspernatur suscipit cumque molestiae minus natus hic modi quod quo ea sed aperiam. </p>
-//         </div>  
-//          </div>
-//          <div className='flex flex-col items-center justify-center gap-3 px-7 sm:px-10 w-[280] text-center'>
-//                 <Image
-//                 src={'/test6.jpg'}
-//                 width={150}
-//                 height={150}
-//                 alt='testImgh'
-//                 className='rounded-full'
-//                 />
-        
-//          <div className=''>
-//             <h3 className="text-lg font-bold">Lorem ipsum dolor </h3>
-//             <p className="text-md">escriptionamet consectetur adipisicing elit. Officia 
-//                 esse earum itaque velit et nemo accusamus, odio aspernatur suscipit cumque molestiae minus natus hic modi quod quo ea sed aperiam. </p>
-//         </div>  
-//          </div>
-         
-//          </div>
-//          </div>
        

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import WhatsAppbtn from "./components/WhatsAppbtn";
 import { eudoxusSans } from "./font";
 
 // Site configuration
@@ -34,11 +35,10 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className="antialiased min-h-screen">
-        <Navbar />
+        <Navbar />  < WhatsAppbtn />
              <main className="min-h-screen">
           {children}
         </main>
-        
       </body>
     </html>
   )

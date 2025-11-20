@@ -206,28 +206,26 @@ const Navbar = () => {
                   onMouseDown={() => setIsOpen(false)}>
                     <div className='mt-3 '>
                         <ul className='grid grid-cols-2 gap-x-7 p-5 bg-[#0c0c0cd7] w-auto h-80'>
-                      <li className='p-1 drop-item'>
+                      <li className='p-1 drop-item  flex items-center justify-start'>
                     <Link href="#" className="flex items-center justify-start gap-3 text-xs">
                        <div className='p-1 bg-amber-800 rounded-md'>
                          <FaGlobe className="w-4 h-4 " title="Website" /></div>
-                  <div className='flex-col'> 
+                  <div className='flex-'> 
                   <h3 className='font-bold'> Web Development</h3>
-              <p className='text-xs'>Your first digital presence</p>
                    </div>
                    
                   </Link>
                       </li>
-                      <li className='p-1 drop-item'>
+                      <li className='p-1 drop-item  flex items-center justify-start'>
                   <Link href="#" className="flex items-center justify-start gap-3 text-xs">
                     <div className='p-1 bg-red-500 rounded-md'> <FaMobile className="w-3 h-4 " title="Phone" />  </div>
                          
                             <div className='flex-col'> 
                   <h3 className='font-bold'> Mobile Apps</h3>
-                 <p className='text-xs'> Custom Apps for Business</p>
                    </div>
                      </Link>
                       </li>
-                      <li className='p-1  drop-item'>
+                      <li className='p-1 drop-item  flex items-center justify-start'>
                 <Link href="#" className="flex items-center justify-start gap-3 text-xs">
                  
                                     <div className='p-1 bg-purple-800 rounded-md'>
@@ -235,11 +233,10 @@ const Navbar = () => {
                      
                        <div className='flex-col'> 
                   <h3 className='font-bold'>SEO</h3>
-               <p className='text-xs'>Let make your presence felt </p>
                    </div>
                   </Link>
                       </li>
-                      <li className=' p-1  drop-item'>
+                      <li className='p-1 drop-item  flex items-center justify-start'>
                 <Link href="#" className="flex items-center justify-start gap-3 text-xs">
                    
                        <div className='p-1 bg-green-800 rounded-md'>
@@ -247,24 +244,23 @@ const Navbar = () => {
                    
                       <div className='flex-col'> 
                   <h3 className='font-bold'>  Website Maintanace</h3>
-               <p className='text-xs'> We offer innovation into your website</p>
                    </div>
                   </Link>
                       </li>
 
-    <li className=' p-1 drop-item'>
-                  <Link href="#" className="flex items-center justify-start gap-3 text-xs">
+                      <li className='p-1 drop-item  flex items-center justify-start'>
+                  <Link href="#" className="flex items-center justify-start gap-3 text-xs ">
                     <div className='p-1 bg-yellow-400 rounded-md'> 
                       <FaPaintBrush className="w-4 h-4  " title="brush" />  </div>
                          
                             <div className='flex-col'> 
                   <h3 className='font-bold'> Graphic Design</h3>
-                  <p className='text-2xs'>Communicate your brand</p>
+                
                    </div>
                      </Link>
                       </li>
 
-                      <li className='p-1 drop-item'>
+                      <li className='p-1 drop-item  flex items-center justify-start'>
                 <Link href="#" className="flex items-center justify-start gap-3 text-xs">
                         
                             <div className='p-1 bg-blue-800 rounded-md'>
@@ -272,7 +268,6 @@ const Navbar = () => {
                   
                      <div className='flex-col'> 
                   <h3 className='font-bold'>  IT Consultancy</h3>
-                 <p className='text-xs'>Have a discussion with our experts</p>
                    </div>
                   </Link>
                       </li>

@@ -95,10 +95,10 @@ const Projects = () => {
       href: 'https://sire-school.vercel.app'
     },
     {
-      image: '/pro-4.jpg',
-      title: 'Netflix clone site',
-      description: 'Sample project of netflix landing page',
-      href: 'https://sire-netflix.vercel.app'
+      image: '/pro-3.jpg',
+      title: 'A University School Website',
+      description: 'Offering a full expirence through the school',
+      href: 'https://sire-school.vercel.app'
     },
        {
       image: '/pro-1.jpg',

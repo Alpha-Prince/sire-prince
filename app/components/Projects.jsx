@@ -23,9 +23,9 @@ const Projects = () => {
       href: 'https://sire-school.vercel.app'
     },
     {
-      image: '/pro-4.jpg',
-      title: 'Netflix clone site',
-      description: 'Sample project of netflix landing page',
+      image: '/pro-3.jpg',
+      title: 'A University School Website',
+      description: 'Offering a full expirence through the school',
       href: 'https://sire-school.vercel.app'
     },
        {
@@ -49,7 +49,7 @@ const Projects = () => {
           Featured Projects 
         </h1>
 
-        <div className='mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-15 sm:gap-6 p-14 sm:p-4'>
+        <div className='mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-15 sm:gap-6 p-8 sm:p-4'>
          {projectsData.map((project,index)=>(
                      <div  key={index}
       className="relative w-full h-45 border border-white/20 rounded-lg overflow-hidden group shadow-lg p-4 cursor-pointer"

@@ -10,7 +10,6 @@ import WhatsAppbtn from "./components/WhatsAppbtn";
 export default function Home() {
   return (
     <main>
-<WhatsAppbtn />
 <Hero />
 <Banner />
 <Projects />
