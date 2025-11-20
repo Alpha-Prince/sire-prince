@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaGlobe, FaMobile, FaTools, FaPaintBrush, FaArrowCircleUp, FaHandsHelping } from 'react-icons/fa';
-
+import Link from 'next/link'
 
 const Projects = () => {
   const projectsData = [
@@ -23,59 +23,18 @@ const Projects = () => {
       href: 'https://sire-school.vercel.app'
     },
     {
-      image: '/pro-4.jpg',
-      title: 'Netflix clone site',
-      description: 'Sample project of netflix landing page',
-      href: 'https://sire-netflix.vercel.app'
-    },
-       {
-      image: '/pro-1.jpg',
-      title: 'E-commence Website',
-      description: 'A platform offering cloth services with ease',
-      href: 'https://sire-e-commence.vercel.app'
-    },
-     {
-      image: '/pro-2.jpg',
-      title: 'Real Estate Website',
-      description: 'Ensuring easy access to properties worth while',
-      href: 'https://sire-estate.vercel.app'
-    },
-    {
-      image: '/pro-1.jpg',
-      title: 'E-commence Website',
-      description: 'A platform offering cloth services with ease',
-      href: 'https://sire-e-commence.vercel.app'
-    },
-    {
-      image: '/pro-2.jpg',
-      title: 'Real Estate Website',
-      description: 'Ensuring easy access to properties worth while',
-      href: 'https://sire-estate.vercel.app'
-    },
-    {
       image: '/pro-3.jpg',
       title: 'A University School Website',
       description: 'Offering a full expirence through the school',
       href: 'https://sire-school.vercel.app'
     },
-    {
-      image: '/pro-4.jpg',
-      title: 'Netflix clone site',
-      description: 'Sample project of netflix landing page',
-      href: 'https://sire-netflix.vercel.app'
-    },
        {
       image: '/pro-1.jpg',
       title: 'E-commence Website',
       description: 'A platform offering cloth services with ease',
-      href: 'https://sire-e-commence.vercel.app'
+      href: 'https://sire-e-ecommence.vercel.app'
     },
-     {
-      image: '/pro-2.jpg',
-      title: 'Real Estate Website',
-      description: 'Ensuring easy access to properties worth while',
-      href: 'https://sire-estate.vercel.app'
-    },
+     
     {
       image: '/pro-1.jpg',
       title: 'E-commence Website',
@@ -104,7 +63,38 @@ const Projects = () => {
       image: '/pro-1.jpg',
       title: 'E-commence Website',
       description: 'A platform offering cloth services with ease',
+      href: 'https://sire-e-ecommence.vercel.app'
+    },
+     
+    {
+      image: '/pro-1.jpg',
+      title: 'E-commence Website',
+      description: 'A platform offering cloth services with ease',
       href: 'https://sire-e-commence.vercel.app'
+    },
+    {
+      image: '/pro-2.jpg',
+      title: 'Real Estate Website',
+      description: 'Ensuring easy access to properties worth while',
+      href: 'https://sire-estate.vercel.app'
+    },
+    {
+      image: '/pro-3.jpg',
+      title: 'A University School Website',
+      description: 'Offering a full expirence through the school',
+      href: 'https://sire-school.vercel.app'
+    },
+    {
+      image: '/pro-3.jpg',
+      title: 'A University School Website',
+      description: 'Offering a full expirence through the school',
+      href: 'https://sire-school.vercel.app'
+    },
+       {
+      image: '/pro-1.jpg',
+      title: 'E-commence Website',
+      description: 'A platform offering cloth services with ease',
+      href: 'https://sire-e-ecommence.vercel.app'
     },
      {
       image: '/pro-2.jpg',
@@ -115,13 +105,13 @@ const Projects = () => {
   ];
 
   return (
-    <div className=" flex items-center justify-end bg-black/50 py-6 px-5 sm:py-22 lg:px-38">
+    <div id="projects" className=" flex items-center justify-end bg-black/50 py-6 px-5 sm:py-22 lg:px-38">
       <div className=' w-full text-white'>
         <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold leading-tight py-2 px-8 sm:py-20 lg:px-18">
           Featured Projects 
         </h1>
 
-        <div className='mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-15 sm:gap-6 p-14 sm:p-4'>
+        <div className='mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-15 sm:gap-6 p-8 sm:p-4'>
          {projectsData.map((project,index)=>(
                      <div  key={index}
       className="relative w-full h-45 border border-white/20 rounded-lg overflow-hidden group shadow-lg p-4 cursor-pointer"
@@ -146,10 +136,12 @@ const Projects = () => {
                            
                        ))}
         </div>
-
-        <div className="w-full1 flex align-center justify-center px-7 py-5">
-          <button className='btn mt-5 '>More Projects</button>
+<Link href="/contact">
+  <div className="w-full1 flex align-center justify-center px-7 py-5">
+          <button className='btn mt-5 '>Contact to start a project</button>
         </div>
+</Link>
+        
       </div>
     </div>
   )
