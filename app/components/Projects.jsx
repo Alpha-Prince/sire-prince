@@ -8,13 +8,13 @@ const Projects = () => {
       image: '/pro-1.jpg',
       title: 'E-commence Website',
       description: 'A platform offering cloth services with ease',
-      href: 'https://sire-school.vercel.app'
+      href: 'https://sire-e-commence.vercel.app'
     },
     {
       image: '/pro-2.jpg',
       title: 'Real Estate Website',
       description: 'Ensuring easy access to properties worth while',
-      href: 'https://sire-school.vercel.app'
+      href: 'https://sire-estate.vercel.app'
     },
     {
       image: '/pro-3.jpg',
@@ -32,13 +32,13 @@ const Projects = () => {
       image: '/pro-1.jpg',
       title: 'E-commence Website',
       description: 'A platform offering cloth services with ease',
-      href: 'https://sire-school.vercel.app'
+      href: 'https://sire-e-ecommence.vercel.app'
     },
      {
       image: '/pro-2.jpg',
       title: 'Real Estate Website',
       description: 'Ensuring easy access to properties worth while',
-      href: 'https://sire-school.vercel.app'
+      href: 'https://sire-estate.vercel.app'
     }
   ];
 
