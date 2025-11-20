@@ -26,8 +26,7 @@ const Navbar = () => {
                 Home
             </li>
     </Link>
-    <Link 
-      href="/services">
+    
     <li >
                 <div 
               className="relative"
@@ -127,9 +126,7 @@ const Navbar = () => {
               )}
             </div>
             </li>
-    </Link>
-
-     <li>
+       <li>
               <Link href="/about" className="hover:text-blue-300 transition-colors">
                 About
               </Link>
@@ -154,7 +151,7 @@ const Navbar = () => {
     {/* mobile view header */}
     <header  className="w-full p-2 relative top-0 z-50 bg-black backdrop-blur-sm text-shadow-gray-500 block sm:hidden">
       <div className='flex items-center justify-between mb-6  px-6 py-4'>
-                <h2 className='text-xl font-semibold'>Sire Prince</h2>
+      <Link href="/"> <h1 className="text-xl sm:text-md md:text-2xl font-semibold">Sire Prince</h1></Link> 
                   <button
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label='Open Menu'
