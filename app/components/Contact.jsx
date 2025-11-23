@@ -5,14 +5,14 @@ import React from 'react'
 
 const contact = () => {
 return (
-    <div className='flex-row items-center justify-between w-full  bg-black/50 pb-20 px-8 sm:py-20 lg:px-12 '>
+    <div className='flex-row items-center justify-between w-full  bg-black/50 pb-20 sm:py-20 lg:px-12 '>
          <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold leading-tight ">
     Reach Out
           </h1>
    <div className='w-full py-12 px-6 sm:py-18 sm:px-24 flex flex-col-reverse md:flex-row items-start justify-between gap-6'>
 
 
-<div className='flex flex-col items-center sm:items-start justify-between h-full w-full sm:w-[45%] gap-18 sm:gap-25 '>
+<div className='flex flex-col items-center sm:items-start justify-between h-full w-full px-8 sm:w-[45%] gap-18 sm:gap-25 '>
   <h2 className='text-3xl sm:text-5xl text-center sm:text-start leading-relaxed sm:leading-loose lg:leading-16 font-bold w-full'>
     Get in touch today and we'll get back to you within 24 hours.
   </h2>
@@ -46,7 +46,7 @@ return (
 
 
 
-    <div className="max-w-lg mx-autor bg-[#272727] p-6">
+    <div className="w-full sm:max-w-lg  mx-autor bg-[#272727] p-6">
       <h3 className="text-2xl font-bold mb-6">Send me a message</h3>
       
       <form  className="space-y-4">
@@ -57,7 +57,7 @@ return (
           required
           className="w-full px-4 py-3 bg-black/50 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400"
         />
-        <div  className='flex items-center justify-between'>
+        <div  className='flex sm:flex-col items-center justify-between'>
             <input
           type="email"
           name="email"
