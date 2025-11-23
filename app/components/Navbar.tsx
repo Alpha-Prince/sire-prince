@@ -49,7 +49,7 @@ const Navbar = () => {
                     <div className='mt-10 '>
                         <ul className='grid grid-cols-3 gap-6 p-8 w-full rounded-bl-[40px] rounded-r-[40px] bg-[#1a1a1a]'>
                       <li className='py-3 px-2 border-0 rounded-bl-[30px]  bg-[#272727] drop-item'>
-                    <Link href="/sevices" className="flex items-center justify-start gap-3  p-2 text-sm">
+                    <Link href="/services" className="flex items-center justify-start gap-3  p-2 text-sm">
                        <div className='p-2 bg-amber-800 rounded-md'>
                          <FaGlobe className="w-7 h-7 " title="Website" /></div>
                   <div className='flex-col'> 
@@ -59,7 +59,7 @@ const Navbar = () => {
                   </Link>
                       </li>
                     <li className='py-3 px-2 border-0   bg-[#272727] drop-item'>
-                    <Link href="/sevices" className="flex items-center justify-start gap-3  p-2 text-sm">
+                    <Link href="/services" className="flex items-center justify-start gap-3  p-2 text-sm">
                        <div className='p-2 bg-red-500 rounded-md'> <FaMobile className="w-7 h-7" title="Phone" />  </div>
                          
                             <div className='flex-col'> 
@@ -280,7 +280,7 @@ const Navbar = () => {
 
 
 
-           <li className='hover:text-blue-300 transition-colors'>    <Link href='#about' onClick={() => setMobileOpen(false)}>About</Link></li>
+           <li className='hover:text-blue-300 transition-colors'>    <Link href='/about' onClick={() => setMobileOpen(false)}>About</Link></li>
                    <li className='hover:text-blue-300 transition-colors'> <Link href='#projects' onClick={() => setMobileOpen(false)}>Projects</Link></li>
               </ul>
            </div>

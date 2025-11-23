@@ -6,6 +6,9 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Testimonials from "./components/Testimonials";
 import WhatsAppbtn from "./components/WhatsAppbtn";
+import Corevalues from "./components/Corevalues";
+import Myprocess from "./components/Myprocess";
+import Contact from "./components/Contact";
 
 
 export default function Home() {
@@ -14,8 +17,11 @@ export default function Home() {
 <Hero />
 <Banner />
 <About />
+<Myprocess />
+<Corevalues />
 <Projects />
 <Testimonials />
+<Contact />
 
     </main>
   );

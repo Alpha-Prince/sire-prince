@@ -66,8 +66,8 @@ const Projects = () => {
 
       <div className="absolute bottom-0 left-0 w-full h-1/2 bg-black/80 p-4">
         <div>
-          <h3 className="text-lg font-bold text-white">{project.title}</h3>
-          <p className="text-sm text-white/90">{project.description}</p>
+          <h3 className="text-ms sm:text-lg font-bold text-white">{project.title}</h3>
+          <p className="text-xm sm:text-sm text-white/90">{project.description}</p>
         </div>
       </div>
     </div>
