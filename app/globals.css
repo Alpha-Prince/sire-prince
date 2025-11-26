@@ -3,26 +3,18 @@
 
 @import "tailwindcss";
 
+```css
+/* Force dark mode by default */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-eudoxus: var(--font-eudoxus-sans);
-  --font-sora: var(--font-sora);
+  --background: #0e0e0e !important;
+  --foreground: #ededed !important;
+  color-scheme: dark !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0e0e0e !important;
-    --foreground: #ffffff !important;
-  }
-}
-
-html body {
-  background: var(--background) !important;
-  color: var(--foreground) !important;
-  font-family: var(--font-sora), Arial, sans-serif !important;
+/* Override any light mode styles */
+body {
+  background: #0e0e0e !important;
+  color: #ededed !important;
 }
 
 .font-sora {
