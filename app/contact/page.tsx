@@ -47,7 +47,7 @@ const contact = () => {
 
 
 return (
-    <div className='flex-row items-center justify-between w-full  bg-black/50 pb-20 sm:py-20 lg:px-12 '>
+    <div className='flex-row items-center justify-between w-full  bg-black/50 py-25 sm:py-20 lg:px-12 '>
          <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold leading-tight ">
     Reach Out
           </h1>
