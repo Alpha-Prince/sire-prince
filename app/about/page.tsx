@@ -2,6 +2,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Corevalues from "../components/Corevalues";
+import Testimonials from "../components/Testimonials";
+import Myprocess from "../components/Myprocess";
 
 const about = () => {
   return (
@@ -16,11 +18,23 @@ const about = () => {
         
         {/* Buttons Container */}
         <div className='flex flex-col sm:flex-row items-center justify-start gap-3 sm:gap-4 w-full'>
-          <Link href="/contact" className='w-full sm:w-auto'> 
-            <button className="bg-[#272727] btn hover:text-blue-400 w-full sm:w-auto px-6 py-3 text-sm sm:text-base transition-all duration-300 hover:bg-[#373737] rounded">
+          <div className='w-full sm:w-auto'> 
+          
+         
+        <a 
+            href="/resume.pdf" 
+            download="Sire_Prince_CV.pdf"
+            className="w-[35%]"
+          >
+            <button 
+              type="button"
+              className="bg-[#272727] cursor-pointer hover:text-blue-400 w-full px-6 py-3 text-sm sm:text-base transition-all duration-300 hover:bg-[#373737] rounded"
+            >
               Download CV
             </button>
-          </Link>
+          </a>
+              
+          </div>
           <Link href="/contact" className='w-full sm:w-auto'> 
             <button className="bg-[#272727] btn hover:text-blue-400 w-full sm:w-auto px-6 py-3 text-sm sm:text-base transition-all duration-300 hover:bg-[#373737] rounded">
               Contact Me
@@ -57,6 +71,8 @@ const about = () => {
       </div>
     </div>
     <Corevalues />
+    <Testimonials />
+    <Myprocess />
     </div>
   )
 }

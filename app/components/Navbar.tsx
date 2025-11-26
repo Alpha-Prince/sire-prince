@@ -127,13 +127,13 @@ const Navbar = () => {
             </div>
             </li>
        <li>
-              <Link href="/about" className="hover:text-blue-300 transition-colors">
+              <Link href="/#about" className="hover:text-blue-300 transition-colors">
                 About
               </Link>
             </li>
   
           <li>
-              <Link href="#projects" className="hover:text-blue-300 transition-colors">
+              <Link href="/#projects" className="hover:text-blue-300 transition-colors">
                 Projects
               </Link>
             </li>
@@ -149,7 +149,7 @@ const Navbar = () => {
 
     
     {/* mobile view header */}
-    <header  className="w-full p-2 relative top-0 z-50 bg-black backdrop-blur-sm text-shadow-gray-500 block sm:hidden">
+    <header  className="w-full p-2 fixed top-0 z-50 bg-black backdrop-blur-sm text-shadow-gray-500 block sm:hidden">
       <div className='flex items-center justify-between mb-6  px-6 py-4'>
       <Link href="/"> <h1 className="text-xl sm:text-md md:text-2xl font-semibold">Sire Prince</h1></Link> 
                   <button
@@ -157,7 +157,6 @@ const Navbar = () => {
               aria-label='Open Menu'
               className='p-2 rounded-md bg-white/5 cursor-pointer'
             >
-              {/* simple hamburger */}
               <svg className='w-6 h-6 text-white' viewBox='0 0 24 24' fill='none' stroke='currentColor'>
                 <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M4 6h16M4 12h16M4 18h16' />
               </svg>
@@ -204,7 +203,7 @@ const Navbar = () => {
                     <div className='mt-3 '>
                         <ul className='grid grid-cols-2 gap-x-7 p-5 bg-[#0c0c0cd7] w-auto h-80'>
                       <li className='p-1 drop-item  flex items-center justify-start'>
-                    <Link href="#" className="flex items-center justify-start gap-3 text-xs">
+                    <Link href="/services" onClick={() => setMobileOpen(false)} className="flex items-center justify-start gap-3 text-xs">
                        <div className='p-1 bg-amber-800 rounded-md'>
                          <FaGlobe className="w-4 h-4 " title="Website" /></div>
                   <div className='flex-'> 
@@ -214,7 +213,7 @@ const Navbar = () => {
                   </Link>
                       </li>
                       <li className='p-1 drop-item  flex items-center justify-start'>
-                  <Link href="#" className="flex items-center justify-start gap-3 text-xs">
+                  <Link href="/services" onClick={() => setMobileOpen(false)} className="flex items-center justify-start gap-3 text-xs">
                     <div className='p-1 bg-red-500 rounded-md'> <FaMobile className="w-3 h-4 " title="Phone" />  </div>
                          
                             <div className='flex-col'> 
@@ -223,7 +222,7 @@ const Navbar = () => {
                      </Link>
                       </li>
                       <li className='p-1 drop-item  flex items-center justify-start'>
-                <Link href="#" className="flex items-center justify-start gap-3 text-xs">
+                <Link href="/services" onClick={() => setMobileOpen(false)} className="flex items-center justify-start gap-3 text-xs">
                  
                                     <div className='p-1 bg-purple-800 rounded-md'>
                                     <FaArrowCircleUp className="w-4 h-4  transform rotate-45" /></div>
@@ -234,7 +233,7 @@ const Navbar = () => {
                   </Link>
                       </li>
                       <li className='p-1 drop-item  flex items-center justify-start'>
-                <Link href="#" className="flex items-center justify-start gap-3 text-xs">
+                <Link href="/services" onClick={() => setMobileOpen(false)} className="flex items-center justify-start gap-3 text-xs">
                    
                        <div className='p-1 bg-green-800 rounded-md'>
                         <FaTools className="w-4 h-4 " title="Tools" /></div>
@@ -246,7 +245,7 @@ const Navbar = () => {
                       </li>
 
                       <li className='p-1 drop-item  flex items-center justify-start'>
-                  <Link href="#" className="flex items-center justify-start gap-3 text-xs ">
+                  <Link href="/services" onClick={() => setMobileOpen(false)} className="flex items-center justify-start gap-3 text-xs ">
                     <div className='p-1 bg-yellow-400 rounded-md'> 
                       <FaPaintBrush className="w-4 h-4  " title="brush" />  </div>
                          
@@ -258,7 +257,7 @@ const Navbar = () => {
                       </li>
 
                       <li className='p-1 drop-item  flex items-center justify-start'>
-                <Link href="#" className="flex items-center justify-start gap-3 text-xs">
+                <Link href="/services" onClick={() => setMobileOpen(false)} className="flex items-center justify-start gap-3 text-xs">
                         
                             <div className='p-1 bg-blue-800 rounded-md'>
                             <FaHandsHelping className="w-4 h-4 " title="help" /></div>
