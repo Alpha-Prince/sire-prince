@@ -31,7 +31,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="min-h-screen flex items-center bg-black/50 mt-50 sm:mt-0 py-14 px-4 sm:px-6 lg:px-8">
+    <section className="min-h-screen flex items-center bg-black/50 py-14 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left side - Text Content */}
         <div className="space-y-12 sm:space-y-12 px-9 py-4 text-white">
