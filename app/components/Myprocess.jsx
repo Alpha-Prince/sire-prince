@@ -35,12 +35,12 @@ const Myprocess = () => {
   
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-16 border-b-1 border-blue/100">
+    <div className="max-w-6xl mx-auto px-6 py-16 border-blue/100">
       <div className="text-center mb-12">
-        <h2 className=" text-2xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+        <h2 className=" text-2xl sm:text-5xl font-bold text-white mb-4">
           Our 4D Process
         </h2>
-        <p className="text-lg sm:text-2xl text-gray-600 dark:text-gray-300">
+        <p className="text-lg sm:text-2xl text-gray-300">
           A streamlined approach to delivering exceptional results
         </p>
       </div>
@@ -49,16 +49,16 @@ const Myprocess = () => {
         {process.map((step, index) => (
           <div key={step.id} className="relative group">
             <div className=" flex flex-col items-center justify-centerl p-6  hover:shadow-lg transition-all duration-300 h-full">
-              <div className=" w-8 h-8 bg-gray-900 dark:bg-white rounded-full flex items-center justify-center text-white dark:text-gray-900 font-bold text-sm">
+              <div className=" w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-900 font-bold text-sm">
                 {step.id}
               </div>
             
 
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 text-center py-3">
+              <h3 className="text-xl font-bold text-white mb-3 text-center py-3">
                 {step.title}
               </h3>
 
-              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed text-center">
+              <p className="text-gray-300 text-sm leading-relaxed text-center">
                 {step.description}
               </p>
             </div>

@@ -89,8 +89,8 @@ const prevProject = () => {
             >
                 <div className='w-auto flex items-center justify-between gap-7'>
                       {testimonialsData.map((testimonials,index)=>(
-                  <div key={index} className='w-[300] h-auto bg-black/20 py-10 flex flex-col items-center justify-between gap-10'>
-                <div className='flex items-center justify-between gap-8 px-2'>
+                  <div key={index} className='w-[300]  h-auto bg-black/20 py-10 flex flex-col items-center justify-between gap-10'>
+                <div className='flex items-center text-white jutstify-between gap-8 px-2'>
                 <Image
                 src={testimonials.image}
                 width={70}

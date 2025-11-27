@@ -1,9 +1,7 @@
 
 
-
 @import "tailwindcss";
 
-```css
 /* Force dark mode by default */
 :root {
   --background: #0e0e0e !important;

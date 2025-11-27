@@ -61,18 +61,18 @@ const Corevalues = () => {
             </div>
 
          
-            <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
+            <h3 className="text-lg font-boldtext-white mb-2">
               {value.title}
             </h3></div>
             
 
    
-            <p className="text-sm text-gray-600 dark:text-gray-300 italic mb-3">
+            <p className="text-sm text-gray-300 italic mb-3">
               {value.tagline}
             </p>
 
       
-            <p className="text-gray-700 dark:text-gray-400 text-sm mb-4 leading-relaxed">
+            <p className="text-gray-500 text-sm mb-4 leading-relaxed">
               {value.description}
             </p>
 
@@ -81,7 +81,7 @@ const Corevalues = () => {
               <p className="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-1">
                 Key Question
               </p>
-              <p className="text-sm text-gray-600 dark:text-gray-300">
+              <p className="text-sm text-gray-400">
                 {value.question}
               </p>
             </div>
