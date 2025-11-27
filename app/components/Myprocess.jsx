@@ -71,7 +71,7 @@ const Myprocess = () => {
             {index < process.length - 1 && (
               <div className="hidden lg:block absolute top-1/2 -right-3 transform -translate-y-1/2">
                 <div className="text-gray-400 font-bold group-hover:text-gray-600 transition-colors duration-300">
-                   →
+                  
                 </div>
               </div>
             )}
