@@ -105,7 +105,7 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects" className=" flex items-center justify-end bg-black/50 py-6 px-5 sm:py-22 lg:px-38">
+    <div id="projects" className=" flex items-center justify-end bg-black/50  pt-36 sm:pt-14 py-6 px-5 sm:py-22 lg:px-38">
       <div className=' w-full text-white'>
         <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold leading-tight py-2 px-8 sm:py-20 lg:px-18">
           Featured Projects 

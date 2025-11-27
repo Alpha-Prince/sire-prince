@@ -4,11 +4,12 @@ import Link from 'next/link'
 import Corevalues from "../components/Corevalues";
 import Testimonials from "../components/Testimonials";
 import Myprocess from "../components/Myprocess";
+import Contact from "../components/Contact"
 
 const about = () => {
   return (
     <div>
-    <div className="bg-black/50 w-full py-16 sm:py-20 lg:py-30 px-4 sm:px-8 md:px-12 lg:px-18 flex flex-col-reverse lg:flex-row items-start justify-between gap-8 sm:gap-12 lg:gap-0">
+    <div className="bg-black/50 w-full pt-36 sm:pt-14 py-16 sm:py-20 lg:py-30 px-4 sm:px-8 md:px-12 lg:px-18 flex flex-col-reverse lg:flex-row items-start justify-between gap-8 sm:gap-12 lg:gap-0">
       
       {/* Left Column - Main Content & Buttons */}
       <div className='flex flex-col items-start justify-between w-full lg:w-[35%] h-full gap-8 sm:gap-12 lg:gap-42  '> 
@@ -73,6 +74,7 @@ const about = () => {
     <Corevalues />
     <Testimonials />
     <Myprocess />
+    <Contact />
     </div>
   )
 }

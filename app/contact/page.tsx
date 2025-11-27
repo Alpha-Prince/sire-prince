@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { useState } from 'react';
-
+import Contact from '../components/Contact';
 
 
 const contact = () => {
@@ -47,7 +47,8 @@ const contact = () => {
 
 
 return (
-    <div className='flex-row items-center justify-between w-full  bg-black/50 py-25 sm:py-20 lg:px-12 '>
+  <div>
+    <div className='flex-row items-center justify-between w-full  bg-black/50 pt-36 pb-14 px-4 sm:pt-14 py-25 sm:py-20 lg:px-12 '>
          <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold leading-tight ">
     Reach Out
           </h1>
@@ -133,6 +134,8 @@ return (
       </form>
     </div>
     </div>
+    </div>
+    <Contact />
     </div>
   )
 }

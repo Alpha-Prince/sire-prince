@@ -32,12 +32,7 @@ const Myprocess = () => {
     }
   ];
 
-  const colorClasses = {
-    violet: 'bg-violet-500',
-    pink: 'bg-pink-500',
-    cyan: 'bg-cyan-500',
-    amber: 'bg-amber-500'
-  };
+  
 
   return (
     <div className="max-w-6xl mx-auto px-6 py-16 border-b-1 border-blue/100">

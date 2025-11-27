@@ -9,6 +9,7 @@ import WhatsAppbtn from "./components/WhatsAppbtn";
 import Corevalues from "./components/Corevalues";
 import Myprocess from "./components/Myprocess";
 import Contact from "./components/Contact";
+import Services from "./components/Services";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
 <Banner />
 <About />
 <Myprocess />
+<Services />
 <Corevalues />
 <Projects />
 <Testimonials />

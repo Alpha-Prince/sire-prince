@@ -8,8 +8,8 @@ import { FaGlobe, FaMobile, FaTools, FaPaintBrush, FaArrowCircleUp,FaHandsHelpin
 
 const Navbar = () => {
 
-   const [isOpen, setIsOpen] = useState(false)
    const [mobileOpen, setMobileOpen] = useState(false)
+   const [isOpen, setIsOpen] = useState(false)
 
   return (
     <div>
@@ -150,7 +150,7 @@ const Navbar = () => {
     
     {/* mobile view header */}
     <header  className="w-full p-2 fixed top-0 z-50 bg-black backdrop-blur-sm text-shadow-gray-500 block sm:hidden">
-      <div className='flex items-center justify-between mb-6  px-6 py-4'>
+      <div className='flex items-center justify-between   px-6 py-4'>
       <Link href="/"> <h1 className="text-xl sm:text-md md:text-2xl font-semibold">Sire Prince</h1></Link> 
                   <button
               onClick={() => setMobileOpen(!mobileOpen)}
@@ -178,109 +178,10 @@ const Navbar = () => {
          <div className="flex flex-col items-start justify-between gap-20 w-full max-w-7xl mx-auto  mb-12 px-10 py-4 text-md font-extralight letter-spacing-md">
           
               <ul className='flex flex-col gap-10'>
-                <li className='hover:text-blue-300 transition-colors'><Link href='#home' onClick={() => setMobileOpen(false)}>Home</Link></li>
-               
-               
-  <li>
-                <div 
-              className="relative"
-              onMouseEnter={() => setIsOpen(true)}
-              onMouseLeave={() => setIsOpen(false)}
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              <button className="flex-between gap-1">
-                <Link href="#service" className="hover:text-blue-300 transition-colors">Solutions</Link>
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-
-              {/* Dropdown Menu */}
-              {isOpen && (
-                <div>
-                   <div className="relative  mt-0 z-50"
-                  onMouseDown={() => setIsOpen(false)}>
-                    <div className='mt-3 '>
-                        <ul className='grid grid-cols-2 gap-x-7 p-5 bg-[#0c0c0cd7] w-auto h-80'>
-                      <li className='p-1 drop-item  flex items-center justify-start'>
-                    <Link href="/services" onClick={() => setMobileOpen(false)} className="flex items-center justify-start gap-3 text-xs">
-                       <div className='p-1 bg-amber-800 rounded-md'>
-                         <FaGlobe className="w-4 h-4 " title="Website" /></div>
-                  <div className='flex-'> 
-                  <h3 className='font-bold'> Web Development</h3>
-                   </div>
-                   
-                  </Link>
-                      </li>
-                      <li className='p-1 drop-item  flex items-center justify-start'>
-                  <Link href="/services" onClick={() => setMobileOpen(false)} className="flex items-center justify-start gap-3 text-xs">
-                    <div className='p-1 bg-red-500 rounded-md'> <FaMobile className="w-3 h-4 " title="Phone" />  </div>
-                         
-                            <div className='flex-col'> 
-                  <h3 className='font-bold'> Mobile Apps</h3>
-                   </div>
-                     </Link>
-                      </li>
-                      <li className='p-1 drop-item  flex items-center justify-start'>
-                <Link href="/services" onClick={() => setMobileOpen(false)} className="flex items-center justify-start gap-3 text-xs">
-                 
-                                    <div className='p-1 bg-purple-800 rounded-md'>
-                                    <FaArrowCircleUp className="w-4 h-4  transform rotate-45" /></div>
-                     
-                       <div className='flex-col'> 
-                  <h3 className='font-bold'>SEO</h3>
-                   </div>
-                  </Link>
-                      </li>
-                      <li className='p-1 drop-item  flex items-center justify-start'>
-                <Link href="/services" onClick={() => setMobileOpen(false)} className="flex items-center justify-start gap-3 text-xs">
-                   
-                       <div className='p-1 bg-green-800 rounded-md'>
-                        <FaTools className="w-4 h-4 " title="Tools" /></div>
-                   
-                      <div className='flex-col'> 
-                  <h3 className='font-bold'>  Website Maintanace</h3>
-                   </div>
-                  </Link>
-                      </li>
-
-                      <li className='p-1 drop-item  flex items-center justify-start'>
-                  <Link href="/services" onClick={() => setMobileOpen(false)} className="flex items-center justify-start gap-3 text-xs ">
-                    <div className='p-1 bg-yellow-400 rounded-md'> 
-                      <FaPaintBrush className="w-4 h-4  " title="brush" />  </div>
-                         
-                            <div className='flex-col'> 
-                  <h3 className='font-bold'> Graphic Design</h3>
-                
-                   </div>
-                     </Link>
-                      </li>
-
-                      <li className='p-1 drop-item  flex items-center justify-start'>
-                <Link href="/services" onClick={() => setMobileOpen(false)} className="flex items-center justify-start gap-3 text-xs">
-                        
-                            <div className='p-1 bg-blue-800 rounded-md'>
-                            <FaHandsHelping className="w-4 h-4 " title="help" /></div>
-                  
-                     <div className='flex-col'> 
-                  <h3 className='font-bold'>  IT Consultancy</h3>
-                   </div>
-                  </Link>
-                      </li>
-                    </ul>
-                    </div>
-                  
-                </div>
-                </div>
-               
-              )}
-            </div>
-            </li>
-
-
-
-           <li className='hover:text-blue-300 transition-colors'>    <Link href='/about' onClick={() => setMobileOpen(false)}>About</Link></li>
-                   <li className='hover:text-blue-300 transition-colors'> <Link href='#projects' onClick={() => setMobileOpen(false)}>Projects</Link></li>
+                    <li className='hover:text-blue-300 transition-colors'><Link href='/' onClick={() => setMobileOpen(false)}>Home</Link></li>
+                    <li className='hover:text-blue-300 transition-colors'><Link href='/#services' onClick={() => setMobileOpen(false)}>Solutions</Link></li>
+                    <li className='hover:text-blue-300 transition-colors'>    <Link href='/#about' onClick={() => setMobileOpen(false)}>About</Link></li>
+                    <li className='hover:text-blue-300 transition-colors'> <Link href='/#projects' onClick={() => setMobileOpen(false)}>Projects</Link></li>
               </ul>
            </div>
 

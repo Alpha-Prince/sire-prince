@@ -79,7 +79,7 @@ const Services = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-black/90 text-white pt-36 sm:pt-14">
+    <div id='services' className="min-h-screen bg-black/90 text-white">
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-8 lg:px-24">
         <div className="max-w-7xl mx-auto">
@@ -116,23 +116,7 @@ const Services = () => {
               </div>
             ))}
           </div>
-    <div className="bg-gradient-to-r from-blue-400/10 to-purple-400/10 rounded-2xl p-8 sm:p-12 text-center">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6">
-              Book A Demo Of A project You Have In Mind 
-            </h2>
-            <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-              Let's discuss your ideas and create prototypes at affordable price
-            </p>
-            <div className="flex items-center gap-4 justify-center">
-              <Link href="/contact">
-                <button className="cursor-pointer bg-blue-400 text-black px-8 py-4 rounded-lg font-bold hover:bg-blue-300 transition-colors duration-300">
-                  Book a Project
-                </button>
-              </Link>
-             
-            </div>
-          </div>
-          <Myprocess />
+
           
           {/* CTA Section */}
           <div className="bg-gradient-to-r from-blue-400/10 to-purple-400/10 rounded-2xl p-8 sm:p-12 text-center">
@@ -148,11 +132,7 @@ const Services = () => {
                   Start a Project
                 </button>
               </Link>
-              <Link href="/projects">
-                <button className="cursor-pointer border border-gray-600 px-8 py-4 rounded-lg font-bold hover:border-blue-400 transition-colors duration-300">
-                  View Our Work
-                </button>
-              </Link>
+              
             </div>
           </div>
         </div>
