@@ -1,6 +1,11 @@
 import React from 'react'
 import { FaGlobe, FaMobile, FaTools, FaPaintBrush, FaArrowCircleUp, FaHandsHelping } from 'react-icons/fa';
 import Link from 'next/link'
+import { 
+  FadeUp, 
+  FadeDown, 
+
+} from '../components/Reveal';
 
 const Projects = () => {
   const projectsData = [
@@ -45,10 +50,12 @@ const Projects = () => {
   return (
     <div id="projects" className=" flex items-center justify-end bg-black/50 py-6 px-5 sm:py-22 lg:px-38">
       <div className=' w-full text-white'>
+        <FadeDown>
         <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold leading-tight py-2 px-8 sm:py-20 lg:px-18">
           Featured Projects 
         </h1>
-
+</FadeDown>
+<FadeUp>
         <div className='mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-15 sm:gap-6 p-8 sm:p-4'>
          {projectsData.map((project,index)=>(
                      <div  key={index}
@@ -74,12 +81,14 @@ const Projects = () => {
                            
                        ))}
         </div>
+        </FadeUp>
+        <FadeDown>
 <Link href="/projects">
   <div className="w-full1 flex align-center justify-center px-7 py-5">
           <button className='btn mt-5 '>More Projects</button>
         </div>
 </Link>
-        
+        </FadeDown>
       </div>
     </div>
   )

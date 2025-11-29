@@ -2,7 +2,13 @@
 
 import React from 'react'
 import { useState } from 'react';
+import { 
+  FadeUp, 
+  FadeDown, 
+  FadeLeft, 
+  FadeRight, 
 
+} from '../components/Reveal';
 
 
 const contact = () => {
@@ -48,18 +54,22 @@ const contact = () => {
 
 return (
     <div className='flex-row items-center justify-between w-full  bg-black/50 pb-20 sm:py-20 lg:px-12 '>
-         <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold leading-tight ">
+      <FadeDown>  <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold leading-tight ">
     Reach Out
           </h1>
+       </FadeDown>
    <div className='w-full py-12 px-6 sm:py-18 sm:px-24 flex flex-col-reverse md:flex-row items-start justify-between gap-6'>
 
 
 <div className='flex flex-col items-center md:items-start justify-between h-full w-full  md:w-[45%] px-8 gap-18 sm:gap-25 '>
+  <FadeLeft>
   <h2 className='text-3xl sm:text-5xl text-center md:text-start leading-relaxed sm:leading-loose lg:leading-16 font-bold w-full'>
     Get in touch today and we'll get back to you within 24 hours.
-  </h2>
-   
+  </h2>       
+  </FadeLeft>
+      <FadeUp>
   <div className='flex flex-col items-center sm:items-start text-center sm:text-center gap-8'>
+ 
     <h2 className='text-2xl font-bold'>Follow Our Socials</h2>
     <div className="flex items-center gap-6">
        <a target="_blank" href="https://www.facebook.com/share/17UH3buTEp/" className="hover:opacity-80 transition-opacity">
@@ -83,12 +93,13 @@ return (
         </svg>
       </a> 
     </div>
+     
+
   </div>
+     </FadeUp>
 </div>
-
-
-       <div className="w-full sm:max-w-lg mx-auto bg-[#272727] p-6 rounded-lg">
-      <h3 className="text-2xl font-bold mb-6 text-white">Send me a message</h3>
+    <div className="w-full sm:max-w-lg mx-auto bg-[#272727] p-6 rounded-lg">
+              <FadeRight> <h3 className="text-2xl font-bold mb-6 text-white">Send me a message</h3>
       
       <form onSubmit={handleSubmit} className="space-y-4">
         <input
@@ -130,8 +141,14 @@ return (
         >
         {isLoading ? 'Sending...' : 'Send'}
         </button>
-      </form>
+      </form></FadeRight>
+
+     
+
     </div>
+   
+
+
     </div>
     </div>
   )

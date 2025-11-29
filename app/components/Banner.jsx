@@ -1,7 +1,11 @@
 import React from 'react'
+import { 
+  FadeUp, 
+} from '../components/Reveal';
 
 const Banner = () => {
   return (
+    <FadeUp>
   <div className='w-full gap-8 flex flex-col md:flex-row items-center justify-between py-18 px-12 sm:py-26 sm:px-24 font-bold text-4xl text-white/80 '>
        
         <div className='w-full md:w-50 flex flex-start sm:flex-center gap-3'>
@@ -42,6 +46,7 @@ const Banner = () => {
      </div>
      </div>
     </div>
+    </FadeUp>
   )
 }
 

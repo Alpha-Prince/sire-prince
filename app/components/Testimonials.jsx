@@ -2,7 +2,12 @@
 import React from 'react';
 import Image from 'next/image';
 import { useEffect, useState} from "react"
+import { 
+  FadeUp, 
+  FadeDown, 
+  FadeLeft, 
 
+} from '../components/Reveal';
 
 const Testimonials = () => {
 
@@ -76,18 +81,17 @@ const prevProject = () => {
     <div>
     <div    className='container mx-auto py-15 sm:py-10 px-6 md:px-20
     lg:px-32  w-full overflow-hidden' id='Testimonials'>
+        <FadeDown>
          <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold leading-tight pb-20 px-8 sm:py-20 lg:px-18 ">
     What clients say
           </h1>
    
-
+</FadeDown>
       
-        {/* projects slider container */}
-        <div className='overflow-hidden'>
+    <div className='overflow-hidden'>
             <div className=' flex items-center justify-between gap-10 transition-transform duration-500 ease-in-out '
             style={{transform: `translateX(-${(currentIndex * 100) / cardsToShow}%)`}}
-            >
-                <div className='w-auto flex items-center justify-between gap-7'>
+            ><FadeUp> <div className='w-auto flex items-center justify-between gap-7'>
                       {testimonialsData.map((testimonials,index)=>(
                   <div key={index} className='w-[300]  h-auto bg-black/20 py-10 flex flex-col items-center justify-between gap-10'>
                 <div className='flex items-center text-white jutstify-between gap-8 px-2'>
@@ -113,13 +117,14 @@ const prevProject = () => {
                     
                 ))}
                 </div>
-              
+              </FadeUp>
+               
             </div>
         </div>
+       
 
-        
-          {/* slider button */}
-        <div className='flex justify-start items-center mt-8'>
+        <FadeLeft>
+             <div className='flex justify-start items-center mt-8'>
             <button onClick={prevProject}  className='p-3 bg-gray-200 rounded mr-2 w-10 cursor-pointer'
              aria-label='Previous Projects'> 
                 <img 
@@ -130,7 +135,8 @@ const prevProject = () => {
                 <img 
                 src="/rightarrow.png" alt="Next" />
             </button>
-        </div>
+        </div></FadeLeft>
+       
     </div>
     </div>
   )

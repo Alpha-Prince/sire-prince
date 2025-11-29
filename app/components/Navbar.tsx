@@ -4,6 +4,13 @@ import React from 'react'
 import { useState } from 'react'
 import Link from 'next/link'
 import { FaGlobe, FaMobile, FaTools, FaPaintBrush, FaArrowCircleUp,FaHandsHelping } from 'react-icons/fa';
+import { 
+  FadeUp, 
+  FadeLeft, 
+  FadeRight, 
+  FadeDown
+} from '../components/Reveal';
+
 
 
 const Navbar = () => {
@@ -12,12 +19,14 @@ const Navbar = () => {
    const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div>
-
+    
+      <div>
+<FadeDown>
        <header className="w-full p-2 relative top-0 z-50 bg-black/80 backdrop-blur-sm text-shadow-gray-500 hidden md:block ">
       <div className="flex-between w-full max-w-7xl mx-auto px-6 py-4 text-md font-extralight letter-spacing-md">
-      <Link href="/"> <h1 className="text-xl sm:text-md md:text-2xl font-semibold">Sire Prince</h1></Link> 
-        <nav>
+    <FadeLeft>  <Link href="/"> <h1 className="text-xl sm:text-md md:text-2xl font-semibold">Sire Prince</h1></Link> </FadeLeft>
+    <FadeUp>
+       <nav>
           <ul className="flex-center gap-12 ">
            
    <Link  
@@ -141,18 +150,22 @@ const Navbar = () => {
            
           </ul>
         </nav>
-        <Link href="/contact">  <button className='btn'>Contact Me</button>
+      </FadeUp>
+       
+        <FadeRight>
+           <Link href="/contact">  <button className='btn'>Contact Me</button>
+       
         </Link>
-      
+    </FadeRight>
       </div>
-    </header>
+    </header>   
+     </FadeDown>
 
-    
     {/* mobile view header */}
     <header  className="w-full p-2 fixed top-0 z-50 bg-black backdrop-blur-sm text-shadow-gray-500 block sm:hidden">
       <div className='flex items-center justify-between   px-6 py-4'>
-      <Link href="/"> <h1 className="text-xl sm:text-md md:text-2xl font-semibold">Sire Prince</h1></Link> 
-                  <button
+        <FadeDown> <Link href="/"> <h1 className="text-xl sm:text-md md:text-2xl font-semibold">Sire Prince</h1></Link> </FadeDown>
+       <FadeRight><button
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label='Open Menu'
               className='p-2 rounded-md bg-white/5 cursor-pointer'
@@ -160,7 +173,9 @@ const Navbar = () => {
               <svg className='w-6 h-6 text-white' viewBox='0 0 24 24' fill='none' stroke='currentColor'>
                 <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M4 6h16M4 12h16M4 18h16' />
               </svg>
-            </button>
+            </button></FadeRight>
+     
+               
               </div>
         {mobileOpen && (
           <div className='sm:hidden  fixed inset-0 w-full h-screen z-50 bg-black flex flex-col '>
@@ -189,6 +204,7 @@ const Navbar = () => {
           </div>
         )}</header>
     </div>
+    
    
   )
 }

@@ -2,13 +2,18 @@ import React from 'react'
 import Link from 'next/link'
 import Myprocess from '../components/Myprocess'
 import { FaGlobe, FaMobile, FaTools, FaPaintBrush, FaArrowCircleUp, FaHandsHelping } from 'react-icons/fa';
+import { 
+  FadeUp, 
+  FadeDown, 
+
+} from '../components/Reveal';
 
 const Services = () => {
   const services = [
     {
       title: "Website Development",
       description: "Custom websites and web applications built with modern frameworks to establish your strong online presence.",
-      features: ["React/Next.js Development", "Responsive Design", "Performance Optimization", "SEO-friendly Structure", "Cross-browser Compatibility"],
+      features: ["Hoisting / Domain Registration", "Responsive Design", "Performance Optimization", "SEO-friendly Structure", "Cross-browser Compatibility"],
       icon: <div className='p-2 bg-amber-800 rounded-md'>
         <FaGlobe className="w-7 h-7" title="Website" />
       </div>
@@ -83,14 +88,14 @@ const Services = () => {
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-8 lg:px-24">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+         <FadeDown>   <div className="text-center mb-16">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
               Our Solutions
             </h1>
             <p className="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto">
               Comprehensive digital solutions to elevate your online presence and drive business growth.
             </p>
-          </div>
+          </div></FadeDown>
 
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
@@ -99,7 +104,7 @@ const Services = () => {
                 key={index}
                 className="bg-black/50 border border-gray-800 rounded-xl p-6 sm:p-8 hover:border-blue-400/50 transition-all duration-300 hover:transform hover:-translate-y-2"
               >
-                <div className="flex items-center justify-start mb-7 gap-5">
+                <FadeUp>  <div className="flex items-center justify-start mb-7 gap-5">
                   {service.icon}
                   <h3 className="text-xl sm:text-2xl font-bold">{service.title}</h3>
                 </div>
@@ -113,6 +118,7 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
+                </FadeUp>
               </div>
             ))}
           </div>
@@ -135,6 +141,7 @@ const Services = () => {
           <Myprocess />
           
           {/* CTA Section */}
+           <FadeDown>
           <div className="bg-gradient-to-r from-blue-400/10 to-purple-400/10 rounded-2xl p-8 sm:p-12 text-center">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6">
               Ready to Start Your Project?
@@ -142,19 +149,17 @@ const Services = () => {
             <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
               Let's discuss your ideas and create something amazing together. Get in touch for a free consultation.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <FadeUp>  <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
-                <button className="cursor-pointer bg-blue-400 text-black px-8 py-4 rounded-lg font-bold hover:bg-blue-300 transition-colors duration-300">
+                <button className="cursor-pointer bg-blue-400 text-gray-800 px-8 py-4 rounded-lg font-bold hover:bg-blue-300 transition-colors duration-300">
                   Start a Project
                 </button>
               </Link>
-              <Link href="/projects">
-                <button className="cursor-pointer border border-gray-600 px-8 py-4 rounded-lg font-bold hover:border-blue-400 transition-colors duration-300">
-                  View Our Work
-                </button>
-              </Link>
-            </div>
+              
+            </div></FadeUp>
+          
           </div>
+          </FadeDown>
         </div>
       </section>
     </div>
@@ -162,3 +167,11 @@ const Services = () => {
 }
 
 export default Services
+
+
+
+
+
+
+
+

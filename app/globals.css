@@ -14,7 +14,9 @@ body {
   background: #0e0e0e !important;
   color: #ededed !important;
 }
-
+html{
+scroll-behavior: smooth;
+}
 .font-sora {
   font-family: var(--font-sora), sans-serif;
 }
@@ -68,17 +70,5 @@ body {
   border-top-right-radius: 25px;
   background: linear-gradient(rgba(8, 0, 58, 0.7),rgba(8, 0, 58, 0.7)),url(/public/pro-1.jpg);
 }
-.home {
-  background: linear-gradient(rgba(8, 0, 58, 0.7),rgba(8, 0, 58, 0.7)),url(/src/assets/picture_2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: #fff;
-  text-align: center;
-}
+
+

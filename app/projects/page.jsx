@@ -1,6 +1,11 @@
 import React from 'react'
 import { FaGlobe, FaMobile, FaTools, FaPaintBrush, FaArrowCircleUp, FaHandsHelping } from 'react-icons/fa';
 import Link from 'next/link'
+import { 
+  FadeUp, 
+  FadeDown, 
+
+} from '../components/Reveal';
 
 const Projects = () => {
   const projectsData = [
@@ -95,23 +100,16 @@ const Projects = () => {
       title: 'E-commence Website',
       description: 'A platform offering cloth services with ease',
       href: 'https://sire-e-ecommence.vercel.app'
-    },
-     {
-      image: '/pro-2.jpg',
-      title: 'Real Estate Website',
-      description: 'Ensuring easy access to properties worth while',
-      href: 'https://sire-estate.vercel.app'
     }
   ];
 
   return (
     <div id="projects" className=" flex items-center justify-end bg-black/50  pt-36 sm:pt-14 py-6 px-5 sm:py-22 lg:px-38">
       <div className=' w-full text-white'>
-        <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold leading-tight py-2 px-8 sm:py-20 lg:px-18">
+        <FadeDown>    <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold leading-tight py-2 px-8 sm:py-20 lg:px-18">
           Featured Projects 
-        </h1>
-
-        <div className='mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-15 sm:gap-6 p-8 sm:p-4'>
+        </h1></FadeDown>
+    <FadeUp><div className='mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-15 sm:gap-6 p-8 sm:p-4'>
          {projectsData.map((project,index)=>(
                      <div  key={index}
       className="relative w-full h-45 border border-white/20 rounded-lg overflow-hidden group shadow-lg p-4 cursor-pointer"
@@ -136,12 +134,29 @@ const Projects = () => {
     </div>
                            
                        ))}
-        </div>
-<Link href="/contact">
-  <div className="w-full1 flex align-center justify-center px-7 py-5">
-          <button className='btn mt-5 '>Contact to start a project</button>
-        </div>
-</Link>
+        </div></FadeUp>
+
+   <FadeDown>
+          <div className="bg-gradient-to-r from-blue-400/10 to-purple-400/10 my-6 sm:my-12 rounded-2xl p-8 sm:p-12 text-center">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold my-6">
+              Ready to Start Your Project?
+            </h2>
+            <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+              Let's discuss your ideas and create something amazing together. Get in touch for a free consultation.
+            </p>
+            <FadeUp>  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/contact">
+                <button className="cursor-pointer bg-blue-400 text-gray-800 px-8 py-4 rounded-lg font-bold hover:bg-blue-300 transition-colors duration-300">
+                  Start a Project
+                </button>
+              </Link>
+              
+            </div></FadeUp>
+          
+          </div>
+          </FadeDown>
+        
+
         
       </div>
     </div>
