@@ -7,7 +7,7 @@ import { eudoxusSans } from "./font";
 
 // Site configuration
 const siteConfig = {
-  url: 'https://sire-orince.vercel.app',
+  url: 'https://sire-prince.vercel.app',
   author: 'Sire Prince',
 
 }
